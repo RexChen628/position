@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .car {
+        display: block;
+        margin: 0 auto;
+      }
+      .main {
+        position: relative;
+        margin: 150px auto;
+        width: 960px;
+      }
+      .features {
+        position: absolute;
+        top: -120px;
+        left: 100px;
+      }
+      .red {
+        background-color: red;
+        width: 320px;
+        height: 120px;
+        display: flex;
+      }
+      .number {
+        color: white;
+        writing-mode: vertical-lr;
+        font-size: 100px;
+      }
+      .text {
+        color: white;
+        font-size: 42px;
+        line-height: 120px;
+      }
+      .black {
+        background-color: black;
+        width: 320px;
+        height: 250px;
+      }
+      .info {
+        color: white;
+      }
+      .updates {
+        background-color: rgb(235, 227, 227);
+        width: 650px;
+        height: 300px;
+        position: absolute;
+        top: 350px;
+        left: 100px;
+      }
+      .play {
+        background-color: red;
+        width: 50px;
+        height: 30px;
+        position: relative;
+        left: 780px;
+        bottom: 210px;
+      }
+      .play::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-left: 25px solid white;
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        left: 14px;
+      }
+      .shadow {
+        background-color: rgb(231, 221, 221);
+        position: absolute;
+        width: 380px;
+        height: 250px;
+        top: -100px;
+        left: 600px;
+        z-index: -1;
+      }
+      h3 {
+        color: red;
+        padding: 15px;
+      }
+      h4 {
+        background-color: black;
+        color: white;
+        display: inline;
+        margin-left: 15px;
+      }
+      li {
+        margin-left: 15px;
+        margin-top: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <a href="https://www.toyota.com.tw/tech_TNGA.aspx#/advantages"
+        ><img class="car" src="https://picsum.photos/650/400/?random=10"
+      /></a>
+      <div class="features">
+        <div class="red">
+          <div class="number">01</div>
+          <div class="text">操控樂趣</div>
+        </div>
+        <div class="black">
+          <h4>人人滿意的駕駛體驗</h4>
+          <p class="info">
+            什麼聯繫電話章節不管，房屋暴力網頁班，它們接觸言論臺東走向近日推坑大魔王商家碩。
+          </p>
+        </div>
+      </div>
+      <div class="updates">
+        <h3>因為我們作了這些更新</h3>
+        <div class="update1">
+          <h4>低重心設計</h4>
+          <li>
+            透過低重心設計，不僅呈現更低伏的外觀，更能減少車身側傾，保持高速行駛穩定性。
+          </li>
+        </div>
+        <div class="update2">
+          <h4>低重心設計</h4>
+          <li>
+            透過低重心設計，不僅呈現更低伏的外觀，更能減少車身側傾，保持高速行駛穩定性。
+          </li>
+        </div>
+        <div class="update3">
+          <h4>低重心設計</h4>
+          <li>
+            透過低重心設計，不僅呈現更低伏的外觀，更能減少車身側傾，保持高速行駛穩定性。
+          </li>
+        </div>
+      </div>
+      <div class="play"></div>
+      <div class="shadow"></div>
+    </div>
+  </body>
+</html>
